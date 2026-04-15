@@ -29,7 +29,7 @@ A high-performance, lightweight Windows utility designed for automated mouse cli
 
 ## ⚙️ How to Use
 
-1.  **Download**: Grab the latest `autoclicker.exe` from the [Releases](#) section.
+1.  **Download**: Locate the `autoclicker.exe` file provided in the file list **under the README** in this repository.
 2.  **Unblock**: Right-click the `.exe`, select **Properties**, check **Unblock**, and click **OK** (required for some Windows security settings).
 3.  **Launch**: Double-click the executable to open the interface.
 4.  **Configure**: Set your desired click interval, button type (Left/Right), and repetition count.
@@ -41,7 +41,7 @@ If you wish to build the binary from the source code:
 
 1.  **Clone the Repository**:
     ```bash
-    git clone [https://github.com/CapyArmy/Simple-Autoclicker.git](https://github.com/CapyArmy/Simple-Autoclicker.git)
+    git clone [https://github.com/YOUR_USERNAME/YOUR_REPO.git](https://github.com/YOUR_USERNAME/YOUR_REPO.git)
     ```
 2.  **Install Requirements**:
     ```bash
