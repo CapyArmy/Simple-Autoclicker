@@ -20,6 +20,68 @@ A robust interaction tool built for efficiency and low-latency performance.
 2. Run the application (no administrative privileges required for basic operation).
 3. Configure your click interval and trigger keys within the app interface.
 
+## 📦 Requirements
+
+Before running the AutoClicker, make sure you have the following installed:
+
+- Python (3.8 or newer recommended)
+- pip (Python package manager)
+
+---
+
+## 🐍 Install Python & pip
+
+### 1. Download Python
+- Go to: https://www.python.org/downloads/
+- Download the latest version for Windows
+
+### 2. Install Python
+- Run the installer
+- ✅ IMPORTANT: Check **"Add Python to PATH"**
+- Click **Install Now**
+
+### 3. Verify Installation
+
+Open Command Prompt and run:
+
+```bash
+python --version
+pip --version
+```
+
+If both show versions, you're good to go.
+
+---
+
+## 📚 Required Python Libraries
+
+Install the required libraries using pip:
+
+```bash
+pip install pyautogui pynput
+```
+
+### Library Details
+- `pyautogui` → Handles mouse automation
+- `pynput` → Detects keyboard input for controls
+
+---
+
+## ▶️ How to Run the AutoClicker
+
+### Option 1: Run the EXE
+1. Download `autoclicker.exe`
+2. Double-click to run
+3. Follow on-screen instructions (if any)
+
+### Option 2: Run via Python (if source is available)
+
+```bash
+python autoclicker.py
+```
+
+---
+
 ## 🛠 Tech Stack
 * **Language:** Python
 * **Environment:** Windows 11
@@ -37,3 +99,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## ⚠️ Important Note
 > [!IMPORTANT]
 > **Check this repository daily.** I am constantly pushing updates, performance tweaks, and new features. Make sure you are always running the latest version for the best response times and stability!
+
+## ⚠️ Notes
+
+- Some antivirus programs may flag AutoClickers as suspicious due to automation behavior.
+- Run as Administrator if clicks are not registering in certain applications.
+- Use responsibly — avoid violating software or game policies.
+
+---
